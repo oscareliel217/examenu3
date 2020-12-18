@@ -1,0 +1,39 @@
+<!--
+  ~ Copyright 2018, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">DP Trivia</string>
+    <string name="game_over">Perdiste :(</string>
+    <string name="try_again">¿Quieres intentar de nuevo?</string>
+    <string name="position">Posición</string>
+    <string name="select_an_avatar">Seleccionar un personaje</string>
+    <string name="android_trivia">DAFT PUNK Trivia</string>
+    <string name="about_text">Esta trivia es para demostrar cuanto sabres sobre Daft Punk.\n\nque esperas para intentarlo!</string>
+    <string name="rules_text">Selecciona una respuesta de las optiones que se muestran. Cada ves que obtengas una respuesta correcta, avanzas a la siguiente pregunta.\n\nSi contestas mal el juego termina! Puedes regresar a la pantalla del titulo usando el boton de regresar esto tambien terminara tu juego.</string>
+    <string name="rules">Reglas</string>
+    <string name="about">Acerca de</string>
+    <string name="trivia_hint">Trivia Hint</string>
+    <string name="titulo_android_trivia_question">DAFT PUNK Trivia (%1$d/%2$d)</string>
+    <string name="titulo_about_trivia">ACERCA DE TRIVIA</string>
+    <string name="titulo_trivia_rules">Trivia reglas</string>
+    <string name="share_success_text">Yo domine #DPTrivia de dispositivos moviles con %1$d/%2$d preguntas correctas!</string>
+    <string name="submit_button">Responder</string>
+    <string name="congratulations">Felicidades!</string>
+    <string name="share">Compartir</string>
+    <string name="sharing_not_available">Compartir no disponible.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/tituloFragment">
+
+    <fragment
+        android:id="@+id/tituloFragment"
+        android:name="com.example.android.navigation.TituloFragment"
+        android:label="fragment_titulo"
+        tools:layout="@layout/fragment_titulo" >
+        <action
+            android:id="@+id/action_tituloFragment_to_juegoFragment"
+            app:destination="@id/juegoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/juegoFragment"
+        android:name="com.example.android.navigation.JuegoFragment"
+        android:label="fragment_juego"
+        tools:layout="@layout/fragment_juego" >
+        <action
+            android:id="@+id/action_juegoFragment_to_juegoGanadoFragment"
+            app:destination="@id/juegoGanadoFragment"
+            app:popUpTo="@id/juegoFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_juegoFragment_to_juegoPerdidoFragment"
+            app:destination="@id/juegoPerdidoFragment"
+            app:popUpTo="@id/juegoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/juegoGanadoFragment"
+        android:name="com.example.android.navigation.JuegoGanadoFragment"
+        android:label="fragment_juego_ganado"
+        tools:layout="@layout/fragment_juego_ganado" >
+        <action
+            android:id="@+id/action_juegoGanadoFragment_to_juegoFragment"
+            app:destination="@id/juegoFragment"
+            app:popUpTo="@id/tituloFragment" />
+        <argument
+            android:name="preguntasCorrectamente"
+            app:argType="integer" />
+        <argument
+            android:name="numeroPreguntas"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/juegoPerdidoFragment"
+        android:name="com.example.android.navigation.JuegoPerdidoFragment"
+        android:label="fragment_juego_perdido"
+        tools:layout="@layout/fragment_juego_perdido" >
+        <action
+            android:id="@+id/action_juegoPerdidoFragment_to_juegoFragment"
+            app:destination="@id/juegoFragment"
+            app:popUpTo="@id/tituloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acercaDeFragment"
+        android:name="com.example.android.navigation.AcercaDeFragment"
+        android:label="@string/titulo_about_trivia"
+        tools:layout="@layout/fragment_acercade" />
+    <fragment
+        android:id="@+id/reglasFragment"
+        android:name="com.example.android.navigation.ReglasFragment"
+        android:label="fragment_reglas"
+        tools:layout="@layout/fragment_reglas" />
+</navigation>
